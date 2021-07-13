@@ -1,3 +1,8 @@
+#Tidy Tuesday for 2021-07-13
+#Eliot McKinley
+#etmckinley@gmail.com
+
+
 library(tidyverse)
 library(ggrepel)
 library(png)
@@ -27,7 +32,7 @@ unmask = scoobydoo %>%
                         TRUE ~ name))
 
 
-villain <- readPNG("./2021/2021-07-13/Pterodactyl_Ghost_New.png")
+villain <- readPNG("./2021/2021-07-13/Pterodactyl_Ghost_New.png") #https://villains.fandom.com/wiki/Pterodactyl_Ghost
 
 
 unmask %>% 
