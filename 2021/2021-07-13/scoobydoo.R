@@ -14,3 +14,6 @@ captured = scoobydoo %>%
   mutate(cumulative = ifelse(value == FALSE, 0, 1),
          cumulative = cumsum(cumulative))
 
+captured %>% 
+  ggplot(aes(x=index, y=cumulative))+
+  geom_path(aes(color=name))
