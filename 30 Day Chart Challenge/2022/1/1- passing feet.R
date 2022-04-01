@@ -36,7 +36,7 @@ team_passing %>%
   ggplot()+
   geom_moon(aes(ratio=ratio, fill=Secondary), x=1, y=1, right=FALSE, size=60)+
   geom_moon(aes(ratio=1-ratio, fill=Primary), x=1, y=1, right=TRUE, size=60)+
-  geom_text(aes(label = paste0(format(round(ratio*100,1), nsmall=1), "%")), x=1.25, y=1, size=7, family="Oswald", color="white")+
+  geom_text(aes(label = paste0(format(round((1-ratio)*100,1), nsmall=1), "%")), x=1.25, y=1, size=7, family="Oswald", color="white")+
   coord_cartesian(xlim=limits, ylim=limits)+
   facet_wrap(~reorder(Squad,-ratio))+
   scale_fill_identity()+
